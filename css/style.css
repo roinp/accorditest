@@ -2,7 +2,7 @@
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;
-    --dark: #353535;
+    --dark: #b0abab;
 }
 
 .fw-medium {
@@ -187,7 +187,7 @@
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
-    width: 45px;
+    /* width: 45px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -196,7 +196,7 @@
     background: transparent;
     border: 1px solid #FFFFFF;
     font-size: 22px;
-    transition: .5s;
+    transition: .5s; */
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
