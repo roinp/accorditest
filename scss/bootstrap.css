@@ -204,7 +204,7 @@ sup {
 }
 
 a {
-  color: #aba9a7 !important;
+  color: #AB7442;
   text-decoration: none;
 }
 a:hover {
@@ -3600,7 +3600,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: antiquewhite !important;
+  color: #AB7442;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3769,6 +3769,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  width: 22px !important;
 }
 
 .navbar-nav-scroll {
@@ -3956,6 +3957,7 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("/img/burger.webp") !important;
+  width: 22px !important;
 }
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
@@ -3991,6 +3993,7 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("/img/burger.webp") !important;
+  width: 22px !important;
 }
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
@@ -6277,7 +6280,7 @@ textarea.form-control-lg {
 }
 
 .border-5 {
-  border-width: 5px !important;
+  border-width: 2px !important;
 }
 
 .w-25 {
@@ -7284,7 +7287,7 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  background-color: #F5F5F5 !important;
+  background-color: red !important;
 }
 
 .bg-dark {

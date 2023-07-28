@@ -386,7 +386,7 @@
 }
 
 .border-top-0 {
-  border-top: 0 !important;
+  border-top: 1 !important;
 }
 
 .border-end {
@@ -466,7 +466,7 @@
 }
 
 .border-5 {
-  border-width: 5px !important;
+  border-width: 2px !important;
 }
 
 .w-25 {
@@ -1335,7 +1335,7 @@
 }
 
 .bg-white {
-  /* background-color: #fff !important; */
+  background-color: #fff !important;
 }
 
 .bg-transparent {
