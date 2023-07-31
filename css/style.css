@@ -181,11 +181,26 @@ body {
 }
 
 
+.foot {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 80px; */
+    background-color: #f68c1f !important;
+}
 /*** Header ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
+    }
+    .column {
+        flex-direction:  column;
     }
     
     .header-carousel .owl-carousel-item img {
@@ -590,7 +605,7 @@ body {
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+   background-color: #f68c1f;
     background-size: cover;
 }
 
