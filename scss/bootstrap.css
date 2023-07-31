@@ -19,7 +19,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #AB7442;
+  --bs-primary: #f9a558;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -204,7 +204,7 @@ sup {
 }
 
 a {
-  color: #AB7442;
+  color: #f9a558;
   text-decoration: none;
 }
 a:hover {
@@ -2694,7 +2694,7 @@ textarea.form-control-lg {
   color: #555555;
 }
 .btn-check:focus + .btn, .btn:focus {
-  outline: 0;
+ 
   box-shadow: 0 0 0 0.25rem rgba(171, 116, 66, 0.25);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
@@ -3952,8 +3952,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  border: none;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("/img/burger.webp") !important;
@@ -7207,7 +7206,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #AB7442 !important;
+  color: #f9a558 !important;
 }
 
 .text-secondary {

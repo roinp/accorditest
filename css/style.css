@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #AB7442;
+    --primary: #f68c1f;
     --light: #f5f5f5;
     --dark: #b0abab;
 }
@@ -24,6 +24,7 @@
     bottom: 45px;
     z-index: 99;
 }
+
 
 
 /*** Spinner ***/
@@ -97,8 +98,12 @@
     outline: none;
 }
 
+a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 body {
-    background-color: #0e1127;
+    background-color: rgb(23, 89, 92);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -125,6 +130,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .navbar-light.sticky-top {
@@ -132,6 +138,29 @@ body {
     transition: .5s;
 }
 
+.portfolio-container p {
+    color: #f68c1f !important;
+    font-size: 20px;
+}
+.portfolio-container h5 {
+    color: rgb(183, 187, 205) !important;
+    font-size: 20px;
+}
+
+.section-title p {
+    font-size: 23px;
+}
+
+.owl-carousel-item img {
+    object-fit: cover !important;
+    /* padding-top: 100px; */
+    /* height: 1500px !important; */
+}
+
+.logo {
+    width: 200px;
+    height: 110px;
+}
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -175,6 +204,10 @@ body {
     .header-carousel .owl-carousel-item h1 {
         font-size: 30px;
         font-weight: 600;
+    }
+    .logo {
+        width: 85px;
+        height: 60px;
     }
 }
 

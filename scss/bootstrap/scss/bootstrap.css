@@ -3955,7 +3955,7 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  border: none;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("/img/burger.webp") !important;
@@ -7060,7 +7060,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #0d6efd !important;
+  color:#f9a558 !important;
 }
 
 .text-secondary {
