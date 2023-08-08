@@ -3693,6 +3693,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  border: 5px solid #06357a;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3745,13 +3746,15 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
+
   }
 }
 .navbar-toggler:hover {
@@ -3958,7 +3961,7 @@ textarea.form-control-lg {
   border: none;
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("/img/burger.webp") !important;
+  /* background-image: url("/img/burger.webp") !important; */
   width: 22px !important;
 }
 .navbar-light .navbar-text {
@@ -3994,7 +3997,7 @@ textarea.form-control-lg {
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("/img/burger.webp") !important;
+  /* background-image: url("/img/burger.webp") !important; */
   width: 22px !important;
 }
 .navbar-dark .navbar-text {

@@ -43,7 +43,7 @@
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 2000
+        time: 1000
     });
 
 
@@ -97,3 +97,36 @@
     
 })(jQuery);
 
+
+const btns = document.querySelectorAll('.fa-eye')
+const projects = document.querySelectorAll('.proj')
+
+const close1 = document.querySelectorAll('.close')
+
+
+close1.forEach(el => {
+    el.addEventListener('click',()=> {
+        projects.forEach(proj => {
+            proj.style.display = 'none'
+        })
+    })
+})
+
+for(let i = 0; i <= projects.length; i++) {
+    btns[i].addEventListener('click', ()=> {
+        projects[i].style.display = 'flex'
+    })
+}
+
+
+
+
+const navbr = document.querySelector('.navbar-toggler1');
+
+
+navbr.addEventListener('mouseover', ()=> {
+    navbr.style.backgroundColor = 'rgba(10, 57, 35, 0.550)'
+})
+navbr.addEventListener('mouseleave', ()=> {
+    navbr.style.backgroundColor = 'transparent'
+})
