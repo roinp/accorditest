@@ -28,6 +28,29 @@
 .navbar {
     background-color: #17595c3f !important; position: absolute; top: 0; right: 0; z-index: 9; width: 100%;
     height: 100px;
+    position: relative;
+}
+
+.about-company {
+    position: absolute;
+    width: 750px;
+    height: auto;
+    color: rgb(241, 241, 241);
+    top: 150px;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-color: #20463bd0;
+    border: 1px solid #F18900;
+    border-radius: 12px;
+    padding: 40px 15px 20px;
+    text-align: center;
+    display: none;
+}
+
+.about-company .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 /*** Spinner ***/
@@ -135,9 +158,10 @@ body {
     width: 73%;
     height: 700px;
     background-color: #20463bd0;
+    border: 1px solid #F18900;
     left: 50%;
     top: 40%;
-    z-index: 2;
+    z-index: 7;
     display: none;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -149,7 +173,6 @@ body {
     justify-content: center;
     padding-bottom: 33px;
     border-radius: 8px;
-    border: 1px solid #F18900;
 }
 .one img {
     width: 376px;
@@ -294,10 +317,51 @@ body {
     background-color: #f68c1f !important;
 }
 /*** Header ***/
+
+.user-info {
+    position: absolute;
+    width: 500px;
+    right: 1%;
+    top: 20%;
+    padding: 20px;
+    background-color: #102a24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #F18900;
+    border-radius: 12px;
+    display: none;
+    z-index: 22;
+}
+
+.user-info button {
+    padding: 5px 10px;
+    background-color: #10f82b;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.user-info p {
+   position: relative;
+   top: 10px;
+}
+.user-info input {
+   border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
+    }
+
+    .about-company {
+        width: 350px;
+    }
+
+    .user-info {
+        width: 350px;
+        left: 6%;
     }
     .column {
         flex-direction:  column;
@@ -363,6 +427,22 @@ body {
 
     }
 }
+
+.color-yellow {
+    color: gold !important;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.831); /* Black w/ opacity */
+  }
 
 .header-carousel .owl-nav {
     position: absolute;

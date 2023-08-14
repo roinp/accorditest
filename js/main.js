@@ -96,7 +96,14 @@
     // });
     
 })(jQuery);
+const modalCont = document.getElementById('myModal');
 
+const aboutCompany = document.querySelector('.about-company')
+const aboutCompanyBtn1 = document.querySelector('.desk')
+const aboutCompanyBtn2 = document.querySelector('.desk-2')
+const userBtn1 = document.querySelector('.mob')
+const userBtn2 = document.querySelector('.mob-2')
+const userInfo = document.querySelector('.user-info')
 
 const btns = document.querySelectorAll('.fa-eye')
 const projects = document.querySelectorAll('.proj')
@@ -104,10 +111,30 @@ const projects = document.querySelectorAll('.proj')
 const close1 = document.querySelectorAll('.close')
 
 
+aboutCompanyBtn1.addEventListener('click',()=> {
+    aboutCompany.style.display = 'block'
+    modalCont.style.display = 'block'
+})
+aboutCompanyBtn2.addEventListener('click',()=> {
+    aboutCompany.style.display = 'block'
+    modalCont.style.display = 'block'
+})
+userBtn1.addEventListener('click',()=> {
+    userInfo.style.display = 'flex'
+    modalCont.style.display = 'block'
+})
+userBtn2.addEventListener('click',()=> {
+    userInfo.style.display = 'flex'
+    modalCont.style.display = 'block'
+})
+
 close1.forEach(el => {
     el.addEventListener('click',()=> {
         projects.forEach(proj => {
             proj.style.display = 'none'
+            modalCont.style.display = 'none'
+            aboutCompany.style.display = 'none'
+            userInfo.style.display = 'none'
         })
     })
 })
@@ -115,6 +142,7 @@ close1.forEach(el => {
 for(let i = 0; i <= projects.length; i++) {
     btns[i].addEventListener('click', ()=> {
         projects[i].style.display = 'flex'
+        modalCont.style.display = 'block'
     })
 }
 
@@ -129,4 +157,28 @@ navbr.addEventListener('mouseover', ()=> {
 })
 navbr.addEventListener('mouseleave', ()=> {
     navbr.style.backgroundColor = 'transparent'
+})
+
+
+
+
+const infoIcon = document.querySelector('.info');
+const popup1 = document.querySelector('.popup');
+const close = document.querySelector('.close');
+console.log(infoIcon,44);
+console.log(popup1,44);
+console.log(modalCont,44);
+
+infoIcon.addEventListener('click', ()=> {
+    popup1.style.display = 'block'
+    modalCont.style.display = 'block'
+})
+close.addEventListener('click', ()=> {
+    popup1.style.display = 'none'
+    modalCont.style.display = 'none'
+})
+
+
+btns.forEach(el => {
+    console.log(el,444);
 })

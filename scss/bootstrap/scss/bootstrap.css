@@ -3693,7 +3693,6 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border: 5px solid #06357a;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3746,15 +3745,13 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  /* border: 1px solid transparent; */
+  border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
-
   }
 }
 .navbar-toggler:hover {
@@ -3958,10 +3955,10 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border: none;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
-  /* background-image: url("/img/burger.webp") !important; */
+  background-image: url("/img/burger.webp") !important;
   width: 22px !important;
 }
 .navbar-light .navbar-text {
@@ -3997,7 +3994,7 @@ textarea.form-control-lg {
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
-  /* background-image: url("/img/burger.webp") !important; */
+  background-image: url("/img/burger.webp") !important;
   width: 22px !important;
 }
 .navbar-dark .navbar-text {
@@ -6286,7 +6283,7 @@ textarea.form-control-lg {
 }
 
 .border-5 {
-  border-width: 2px !important;
+  border-width: 5px !important;
 }
 
 .w-25 {
@@ -7063,7 +7060,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color:#f9a558 !important;
+  color: #0d6efd !important;
 }
 
 .text-secondary {
