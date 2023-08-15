@@ -147,6 +147,7 @@ nav a:hover {
 
 body {
     background-color: rgb(23, 89, 92);
+    padding-bottom: 25px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -268,6 +269,8 @@ body {
     width: 250px;
     height: 130px;
 }
+
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -285,6 +288,7 @@ body {
         transition: .5s;
         opacity: 1;
     }
+   
 }
 
 .mob, .mob-2 {
@@ -321,6 +325,7 @@ body {
     align-items: center;
     /* height: 80px; */
     background-color: #f68c1f !important;
+    
 }
 /*** Header ***/
 
@@ -368,12 +373,25 @@ body {
     height: 80px;
 }
 
+
+
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
     }
-
+    .logo-mob {
+        position: relative !important;
+        top: -25px !important;
+    }
+    .foot {
+        position: relative;
+        top: -25px;
+    }
+    .ppp {
+        position: relative;
+        top: -15px;
+    }
     .about-company {
         width: 350px;
     }
@@ -698,6 +716,20 @@ body {
     opacity: 1;
 }
 
+.container h1 {
+    text-shadow: -9px 4px 8px rgba(7, 8, 7, 0.68);
+    -webkit-text-stroke: 1px rgba(252, 135, 17, 0.149);
+
+}
+.container h5 {
+    text-shadow: -9px 4px 8px rgba(7, 8, 7, 0.68);
+   
+
+}
+.container p {
+    text-shadow: -9px 4px 8px rgba(7, 8, 7, 0.68);
+
+}
 
 /*** Quote ***/
 @media (min-width: 992px) {
@@ -864,8 +896,15 @@ body {
 
 /*** Footer ***/
 .footer {
-   background-color: #fb8e00de !important;
+    background-color: rgba(30, 105, 109, 0.212) !important;
     background-size: cover;
+    background-image: url('../img/2s.png');
+    background-size: 100% 100%;
+    height: 140px;
+}
+
+.footer .logo {
+    width: 450px;
 }
 
 .footer .btn.btn-social {
