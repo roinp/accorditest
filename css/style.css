@@ -147,7 +147,7 @@ nav a:hover {
 
 body {
     background-color: rgb(23, 89, 92);
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -266,8 +266,8 @@ body {
 }
 
 .logo {
-    width: 250px;
-    height: 130px;
+    width: 145px;
+    height: 80px;
 }
 
 
@@ -383,14 +383,17 @@ body {
     .logo-mob {
         position: relative !important;
         top: -25px !important;
+        width: 90px !important;
+        height: 60px !important;
+        top: -3px !important;
     }
     .foot {
         position: relative;
-        top: -25px;
+        top: 7px;
     }
     .ppp {
         position: relative;
-        top: -15px;
+        top: 15px;
     }
     .about-company {
         width: 350px;
@@ -465,8 +468,8 @@ body {
     }
     .logo {
        
-    width: 123px;
-    height: 73px;
+    width: 85px;
+    height: 52px;
 
     }
 }
@@ -723,12 +726,11 @@ body {
 }
 .container h5 {
     text-shadow: -9px 4px 8px rgba(7, 8, 7, 0.68);
-   
-
+    font-family: 'nino-mt' !important;
 }
 .container p {
     text-shadow: -9px 4px 8px rgba(7, 8, 7, 0.68);
-
+    font-family: 'nino-mt' !important;
 }
 
 /*** Quote ***/
@@ -896,15 +898,14 @@ body {
 
 /*** Footer ***/
 .footer {
-    background-color: rgba(30, 105, 109, 0.212) !important;
-    background-size: cover;
-    background-image: url('../img/2s.png');
-    background-size: 100% 100%;
-    height: 140px;
+    background-color: #f68c1f !important;
+    /* height: 120px; */
+    padding: 10px 0;
 }
 
-.footer .logo {
-    width: 450px;
+.logo-mob {
+    width: 145px ;
+    height: 80px;
 }
 
 .footer .btn.btn-social {
