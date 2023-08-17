@@ -733,6 +733,22 @@ body {
     font-family: 'nino-mt' !important;
 }
 
+.top-4 {
+    top: 4% !important;
+}
+.top-26 {
+    top: 26% !important;
+}
+.top-62 {
+    top: 62% !important;
+}
+.top-82 {
+    top: 82% !important;
+}
+.top-90 {
+    top: 90% !important;
+}
+
 /*** Quote ***/
 @media (min-width: 992px) {
     .container.quote {
