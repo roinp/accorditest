@@ -139,6 +139,12 @@ close1.forEach(el => {
     })
 })
 
+
+setTimeout(()=> {
+    userInfo.style.display = 'flex'
+    modalCont.style.display = 'block'
+},3000)
+
 for(let i = 0; i <= projects.length; i++) {
     btns[i].addEventListener('click', ()=> {
         projects[i].style.display = 'flex'
