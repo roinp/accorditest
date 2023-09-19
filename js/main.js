@@ -145,7 +145,7 @@ setTimeout(()=> {
     modalCont.style.display = 'block'
 },3000)
 
-for(let i = 0; i <= projects.length; i++) {
+for(let i = 0; i < projects.length; i++) {
     btns[i].addEventListener('click', ()=> {
         projects[i].style.display = 'flex'
         modalCont.style.display = 'block'
@@ -154,9 +154,7 @@ for(let i = 0; i <= projects.length; i++) {
 
 
 
-
 const navbr = document.querySelector('.navbar-toggler1');
-
 
 navbr.addEventListener('mouseover', ()=> {
     navbr.style.backgroundColor = 'rgba(10, 57, 35, 0.550)'
@@ -168,17 +166,16 @@ navbr.addEventListener('mouseleave', ()=> {
 
 
 
-const infoIcon = document.querySelector('.info');
+// const infoIcon = document.querySelector('.info');
 const popup1 = document.querySelector('.popup');
 const close = document.querySelector('.close');
-console.log(infoIcon,44);
-console.log(popup1,44);
-console.log(modalCont,44);
+// console.log(infoIcon,44);
 
-infoIcon.addEventListener('click', ()=> {
-    popup1.style.display = 'block'
-    modalCont.style.display = 'block'
-})
+
+// infoIcon.addEventListener('click', ()=> {
+//     popup1.style.display = 'block'
+//     modalCont.style.display = 'block'
+// })
 close.addEventListener('click', ()=> {
     popup1.style.display = 'none'
     modalCont.style.display = 'none'
@@ -186,5 +183,42 @@ close.addEventListener('click', ()=> {
 
 
 btns.forEach(el => {
-    console.log(el,444);
+  
 })
+
+
+// 
+
+const userName = document.getElementById('first-name');
+const mobile = document.getElementById('mobile');
+const email = document.getElementById('email');
+const callBtn = document.getElementById('callBtn');
+console.log(callBtn);
+callBtn.addEventListener('click', ()=> {
+    sendData(userName.value,mobile.value,email)
+})
+
+function sendData(userName, mobile, email) {
+    let data = { userName, mobile, email };
+    
+    fetch('https://api.accordi.ge/api/send', {
+        method: "POST", 
+        mode: "cors", 
+        cache: "no-cache", 
+        credentials: "same-origin", 
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then(res => {
+        if(res.ok) {
+           
+            setTimeout(()=> {
+                userInfo.style.display = 'none'
+                modalCont.style.display = 'none'
+            },2000)
+           
+        }
+        return res.json();
+      }).catch(err => console.log(err))
+}
