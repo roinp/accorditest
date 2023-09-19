@@ -195,11 +195,11 @@ const email = document.getElementById('email');
 const callBtn = document.getElementById('callBtn');
 console.log(callBtn);
 callBtn.addEventListener('click', ()=> {
-    sendData(userName.value,mobile.value,email)
+    sendData(userName.value,mobile.value,email.value)
 })
 
-function sendData(userName, mobile, email) {
-    let data = { userName, mobile, email };
+function sendData(name, mobile, email) {
+    let data = { name, mobile, email };
     
     fetch('https://api.accordi.ge/api/send', {
         method: "POST", 
