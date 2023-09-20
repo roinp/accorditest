@@ -31,6 +31,30 @@
     position: relative;
 }
 
+.done {
+    position: fixed;
+    display: none;
+    z-index: 99;
+    width: 80%;
+    max-width: 250px;
+    background-color: rgb(23, 89, 92);;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #f68c1f ;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -48%);
+    border-radius: 8px;
+}
+
+.done img {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 12px;
+}
+
 .about-company {
     position: absolute;
     width: 750px;

@@ -135,6 +135,7 @@ close1.forEach(el => {
             modalCont.style.display = 'none'
             aboutCompany.style.display = 'none'
             userInfo.style.display = 'none'
+            sucsessBox.style.display = 'none'
         })
     })
 })
@@ -179,6 +180,7 @@ const close = document.querySelector('.close');
 close.addEventListener('click', ()=> {
     popup1.style.display = 'none'
     modalCont.style.display = 'none'
+    
 })
 
 
@@ -188,6 +190,8 @@ btns.forEach(el => {
 
 
 // 
+
+const sucsessBox = document.querySelector('.done');
 
 const userName = document.getElementById('first-name');
 const mobile = document.getElementById('mobile');
@@ -212,13 +216,19 @@ function sendData(name, mobile, email) {
         body: JSON.stringify(data),
       }).then(res => {
         if(res.ok) {
-           
             setTimeout(()=> {
+                modalCont.style.display = 'block'
+                sucsessBox.style.display = 'block'
                 userInfo.style.display = 'none'
-                modalCont.style.display = 'none'
-            },2000)
+            },1000)
+            // setTimeout(()=> {
+            //     
+            //     modalCont.style.display = 'none'
+            // },2000)
            
         }
         return res.json();
       }).catch(err => console.log(err))
 }
+
+
