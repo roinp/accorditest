@@ -377,9 +377,12 @@ body {
 
 .user-info button {
     padding: 5px 10px;
-    background-color: #10f82b;
+    background-color: #1b331e;
     border-radius: 7px;
     margin-top: 10px;
+    border: 2px solid #f68c1f;
+    color: #1adfdf;
+    font-family: 'nino-mt' !important;
 }
 .user-info p {
    position: relative;
