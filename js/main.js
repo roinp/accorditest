@@ -221,12 +221,8 @@ function sendData(name, mobile, email) {
                 sucsessBox.style.display = 'block'
                 userInfo.style.display = 'none'
             },1000)
-            // setTimeout(()=> {
-            //     
-            //     modalCont.style.display = 'none'
-            // },2000)
-           
-        }
+               
+        } 
         return res.json();
       }).catch(err => console.log(err))
 }
