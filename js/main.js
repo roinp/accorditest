@@ -107,6 +107,7 @@ const userInfo = document.querySelector('.user-info')
 
 const btns = document.querySelectorAll('.fa-eye')
 const projects = document.querySelectorAll('.proj')
+const portfolios = document.querySelectorAll('.portfolio-overlay')
 
 const close1 = document.querySelectorAll('.close')
 
@@ -148,6 +149,12 @@ setTimeout(()=> {
 
 for(let i = 0; i < projects.length; i++) {
     btns[i].addEventListener('click', ()=> {
+        projects[i].style.display = 'flex'
+        modalCont.style.display = 'block'
+    })
+}
+for(let i = 0; i < portfolios.length; i++) {
+    portfolios[i].addEventListener('click', ()=> {
         projects[i].style.display = 'flex'
         modalCont.style.display = 'block'
     })

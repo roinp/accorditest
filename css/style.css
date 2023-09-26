@@ -359,9 +359,10 @@ body {
 
 .user-info {
     position: absolute;
+    position: fixed;
     width: 700px;
     right: 1%;
-    top: 20%;
+    top: 10%;
     padding: 20px;
     background-color: #102a24;
     display: flex;
